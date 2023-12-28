@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       DMSerif: ["DM Serif Display"],
       Jost: ["Jost"],
+      Inter: ["Inter"]
     },
     colors: {
       black: "#292F36",

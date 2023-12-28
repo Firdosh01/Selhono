@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div className="wrapper">
       <div className="container">
-        <nav className="flex justify-between items-center">
+        <nav className="flex items-center justify-between nav_container">
           <div className="flex gap-[7px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -20,11 +20,13 @@ export default function Navbar() {
                 fill="#CDA274"
               />
             </svg>
-            <h3 className="uppercase md:text-[40px] text-[20px] font-normal leading-[50px] font-DMSerif">
+            <h3 className="uppercase lg:text-[40px] text-[20px] font-normal leading-[50px] font-DMSerif">
               selhono
             </h3>
           </div>
-          <ul className="flex md:gap-3 gap-2">
+          <div className=" flex gap-[31px] items-center">
+
+          <ul className="hidden gap-2 sm:flex md:gap-5">
             {navigation.map((nav) => {
               return (
                 <li className="flex font-Jost font-medium   md:text-[20px] text-[1rem] leading-[25px] text-black">
@@ -33,6 +35,15 @@ export default function Navbar() {
               );
             })}
           </ul>
+          <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+<g opacity="0.8">
+<path d="M16.6843 16.6844L22 22M19.3756 10.1874C19.3756 15.2616 15.2622 19.3749 10.1881 19.3749C5.11399 19.3749 1.00061 15.2616 1.00061 10.1874C1.00061 5.11332 5.11399 0.999939 10.1881 0.999939C15.2622 0.999939 19.3756 5.11332 19.3756 10.1874Z" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+
+          </div>
+          </div>
         </nav>
       </div>
     </div>
