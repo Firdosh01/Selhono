@@ -1,19 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;500;600;700&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: burlywood;
 }
 body{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .wrapper{
   max-width: 1920px;
-  /* margin-inline: auto; */
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
+}
+.active{
+  color: #C76904;
 }
 .heading {
   font-family: "DM Serif Display";
@@ -26,4 +33,30 @@ body{
   font-style: normal;
   line-height: 150%;
   letter-spacing: 0.22px;
+}
+.container{
+  /* max-width: calc(1920px - 1210px); */
+  padding-inline: 355px;
+  margin-inline: auto; 
+  margin-top: 54px;
+}
+@media screen and (max-width:1440px) {
+  .container{
+    padding-inline: 100px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .container{
+    padding-inline: 50px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .container{
+    padding-inline: 20px;
+    margin-top: 10px;
+  }
 }
