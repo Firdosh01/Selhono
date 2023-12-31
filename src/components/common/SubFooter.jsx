@@ -1,6 +1,7 @@
 import React from "react";
 import subFooterImg from "../../assets/Rectangle 10.png";
-import CTABtn from "../Button";
+import CTABtn from "../common/Button";
+
 export default function SubFooter() {
   return (
     <div className="relative">
