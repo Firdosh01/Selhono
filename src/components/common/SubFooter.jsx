@@ -15,7 +15,7 @@ export default function SubFooter() {
             <h4 className="heading xl:text-[50px] lg:text-[40px] md:text-[30px] text-[17px] text-white xl:mt-[80px] lg:mt-[40px] md:mt-[20px] mt-[5px] text-center">
               Wanna join the interno?
             </h4>
-            <p className="xl:mt-[11px] mt-[5px] paragraph tracking-[0.22px] font-medium text-white text-center text-[15px]">
+            <p className="xl:mt-[11px] mt-[5px] paragraph tracking-[0.22px] font-medium text-white text-center md:text-[22px] text-[15px]">
               It is a long established fact will be distracted.
             </p>
             <div className="xl:mt-[32px] mt-[15px]">

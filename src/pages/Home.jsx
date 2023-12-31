@@ -10,6 +10,7 @@ import bedroomImg3 from "../assets/Rectangle 6.png";
 import bedroomImg4 from "../assets/Rectangle 7.png";
 import { Blogs } from "../components/common/constent";
 import SubFooter from "../components/common/SubFooter";
+import Footer from "../components/common/Footer";
 function Home() {
   return (
     <div>
@@ -93,7 +94,7 @@ function Home() {
                 <span className="text-black  lg:text-[25px] text-[20px] font-DMSerif font-normal leading-[125%]">
                   Project Plan
                 </span>
-                <p className="paragraph mt-[20px] text-richBlack font-normal lg:text-[22px] text-[15px] text-center">
+                <p className="paragraph mt-[20px] text-richBlack font-normal lg:text-[22px] text-[15px] text-center tracking-[0.22px]">
                   There are many variations of the passages of lorem Ipsum from
                   available, majority.
                 </p>
@@ -369,7 +370,7 @@ function Home() {
                         {blog.heading}
                       </h2>
                       <div className="mt-[30px] flex justify-between items-center">
-                        <p className=" paragraph text-[16px] text-richBlack tracking-[0.16px]">
+                        <p className=" paragraph md:text-[16px] text-[15px] text-richBlack tracking-[0.16px]">
                           {blog.date}
                         </p>
                         <div className="xl:w-[52px] xl:h-[53px] w-[32px] h-[33px]">
@@ -409,6 +410,9 @@ function Home() {
       <section className="md:mt-[119px] mt-[59.50px]">
         <SubFooter />
       </section>
+      <footer className="mt-[41px]">
+        <Footer />
+      </footer>
     </div>
   );
 }

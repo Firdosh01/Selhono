@@ -7,8 +7,8 @@ export default function Button({ children, active, style, linkto }) {
       <Link to={linkto}>
         <div
           className={`flex items-center  ${style} ${
-            active ? " bg-burlywood-100" : "bg-black"
-          } xl:rounded-[18px] md:rounded-xl rounded-md`}
+            active ? " bg-burlywood-100 shadow-[0px_10px_20px_0px_#1F2022]" : "bg-black  shadow-[0px_10px_20px_0px_rgba(192,192,192,0.35)]"
+          } xl:rounded-[18px] md:rounded-xl rounded-md `}
         >
           <div
             className={`${
