@@ -26,7 +26,7 @@ export const navigation = [
   {
     id: 5,
     link: "Blog",
-    path: "/blog",
+    path: "/blog/",
   },
   {
     id: 6,
