@@ -26,7 +26,7 @@ export default function Navbar() {
           </div>
           <div className=" flex gap-[31px] items-center">
 
-          <ul className="hidden gap-2 sm:flex md:gap-5">
+          <ul className="hidden gap-3 sm:flex md:gap-7">
             {navigation.map((nav) => {
               return (
                 <li className="flex font-Jost font-medium   md:text-[20px] text-[1rem] leading-[25px] text-black">

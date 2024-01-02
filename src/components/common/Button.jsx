@@ -13,7 +13,7 @@ export default function Button({ children, active, style, linkto }) {
           <div
             className={`${
               active ? " bg-burlywood-100" : "bg-black"
-            } font-Jost xl:text-[18px] md:text-[15px] text-[10px] font-semibold leading-[125%] tracking-[0.36px] text-white`}
+            } font-Jost xl:text-[18px] md:text-[15px] text-[10px] font-semibold leading-[125%] tracking-[0.36px] text-white select-none`}
           >
             {children}
           </div>

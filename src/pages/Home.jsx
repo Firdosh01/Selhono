@@ -11,6 +11,9 @@ import bedroomImg4 from "../assets/Rectangle 7.png";
 import { Blogs } from "../components/common/constent";
 import SubFooter from "../components/common/SubFooter";
 import Footer from "../components/common/Footer";
+import Exprience from "../components/common/Exprience";
+import CTABtn from '../components/common/Button'
+
 function Home() {
   return (
     <div>
@@ -26,6 +29,16 @@ function Home() {
                 There are many variations of the passages of lorem Ipsum
                 fromavailable, majority.
               </span>
+              <div className="md:mt-[28px] mt-[5px]">
+              <CTABtn
+                active={true}
+                linkto={"/contact-us/"}
+                children={"Get Started"}
+                style={
+                  "xl:py-[26px] xl:px-[48px] md:py-[15px] md:px-[17px] py-[7px] px-[8px] md:gap-[11px] gap-[5px]"
+                }
+              />
+              </div>
             </div>
           </div>
 
@@ -33,7 +46,7 @@ function Home() {
           <div className="md:mt-[95px] mt-[50px] grid md:grid-cols-3 grid-cols-1 gap-[42px]">
             <div className="flex flex-col gap-[52px] items-center">
               <div className="flex flex-col items-center md:items-center">
-                <span className="text-black   lg:text-[25px] text-[20px]  font-DMSerif font-normal leading-[125%]">
+                <span className="text-black   md:text-[25px] text-[20px]  font-DMSerif font-normal leading-[125%]">
                   Project Plan
                 </span>
                 <p className="paragraph mt-[20px] text-richBlack font-normal lg:text-[22px] text-[15px] text-center">
@@ -41,7 +54,7 @@ function Home() {
                   available, majority.
                 </p>
               </div>
-              <div className="flex gap-[12px] items-center lg:text-[18px] text-[13px] font-Jost font-semibold leading-[125%] tracking-[0.36px] text-richBlack">
+              <div className="flex gap-[12px] items-center md:text-[18px] text-[13px] font-Jost font-semibold leading-[125%] tracking-[0.36px] text-richBlack">
                 Read More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +75,7 @@ function Home() {
             </div>
             <div className="flex flex-col gap-[52px] items-center">
               <div className="flex flex-col items-center">
-                <span className="text-black   lg:text-[25px] text-[20px]  font-DMSerif font-normal leading-[125%]">
+                <span className="text-black   md:text-[25px] text-[20px]  font-DMSerif font-normal leading-[125%]">
                   Project Plan
                 </span>
                 <p className="paragraph mt-[20px] text-richBlack font-normal lg:text-[22px] text-[15px] text-center">
@@ -70,7 +83,7 @@ function Home() {
                   available, majority.
                 </p>
               </div>
-              <div className="flex gap-[12px] items-center lg:text-[18px] text-[13px]  font-Jost font-semibold leading-[125%] tracking-[0.36px] text-richBlack">
+              <div className="flex gap-[12px] items-center md:text-[18px] text-[13px]  font-Jost font-semibold leading-[125%] tracking-[0.36px] text-richBlack">
                 Read More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +104,7 @@ function Home() {
             </div>
             <div className="flex flex-col gap-[52px] items-center">
               <div className="flex flex-col items-center">
-                <span className="text-black  lg:text-[25px] text-[20px] font-DMSerif font-normal leading-[125%]">
+                <span className="text-black  md:text-[25px] text-[20px] font-DMSerif font-normal leading-[125%]">
                   Project Plan
                 </span>
                 <p className="paragraph mt-[20px] text-richBlack font-normal lg:text-[22px] text-[15px] text-center tracking-[0.22px]">
@@ -99,7 +112,7 @@ function Home() {
                   available, majority.
                 </p>
               </div>
-              <div className="flex gap-[12px] items-center lg:text-[18px] text-[13px]  font-Jost font-semibold leading-[125%] tracking-[0.36px] text-richBlack">
+              <div className="flex gap-[12px] items-center md:text-[18px] text-[13px]  font-Jost font-semibold leading-[125%] tracking-[0.36px] text-richBlack">
                 Read More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +151,7 @@ function Home() {
                 <h2 className=" heading xl:text-[60px] md:text-[50px] text-[30px] font-normal tracking-[1.2px] text-black text-center">
                   Follow Our Projects
                 </h2>
-                <p className=" tracking-[0.28px] paragraph text-black xl:text-[28px] md:text-[22px] text-[15px] text-center font-normal">
+                <p className=" tracking-[0.28px] paragraph text-black xl:text-[28px] md:text-[22px] text-[15px] text-center font-normal max-w-[737px]">
                   It is a long established fact that a reader will be distracted
                   by the of readable content of page lookings at its layouts
                   points.
@@ -289,54 +302,9 @@ function Home() {
           </section>
 
           {/* Counter  */}
-
-          <section className="lg:mt-[324px] md:mt-[162px] mt-[81px]">
-            <div className="grid md:grid-cols-4 md:gap-[76px] gap-[20px] grid-cols-2">
-              <div className="relative ">
-                <div className="flex flex-col md:gap-[16px] gap-[5px] justify-center items-center">
-                  <h2 className="heading xl:text-[85px] lg:text-[50px] text-[30px]  text-burlywood-50">
-                    12
-                  </h2>
-                  <p className="text-center paragraph xl:text-[22px] lg:text-[18px] text-[15px]  tracking-[0.22px] font-normal">
-                    Years Of Experiance
-                  </p>
-                </div>
-                <div className="absolute top-3 right-[-20px] bg-burlywood-50 w-[1px] h-[130px]"></div>
-              </div>
-              <div className="relative ">
-                <div className="flex flex-col md:gap-[16px] gap-[5px] justify-center items-center">
-                  <h2 className="heading xl:text-[85px] lg:text-[50px] text-[30px] text-burlywood-50">
-                    1074
-                  </h2>
-                  <p className="text-center paragraph xl:text-[22px] lg:text-[18px] text-[15px]  tracking-[0.22px] font-normal">
-                    Success Project
-                  </p>
-                </div>
-                <div className="absolute top-3 xl:right-[-40px] right-[-20px] bg-burlywood-50 w-[1px] h-[130px] md:block hidden "></div>
-              </div>
-              <div className="relative">
-                <div className="flex flex-col md:gap-[16px] gap-[5px] justify-center items-center">
-                  <h2 className="heading xl:text-[85px] lg:text-[50px] text-[30px] text-burlywood-50">
-                    98
-                  </h2>
-                  <p className="text-center paragraph xl:text-[22px] lg:text-[18px] text-[15px] tracking-[0.22px] font-normal">
-                    Active Project
-                  </p>
-                </div>
-                <div className="absolute top-3 right-[-20px] bg-burlywood-50 w-[1px] h-[130px] md:block hidden"></div>
-              </div>
-              <div>
-                <div className="flex flex-col md:gap-[16px] gap-[5px] justify-center items-center">
-                  <h2 className="heading xl:text-[85px] lg:text-[50px] text-[30px] text-burlywood-50">
-                    583
-                  </h2>
-                  <p className="text-center paragraph xl:text-[22px] lg:text-[18px] text-[15px]  tracking-[0.22px] font-normal">
-                    Happy CUstomers
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          <div className="lg:mt-[324px] md:mt-[162px] mt-[81px]">  
+             <Exprience />
+          </div>
 
           <section className="lg:mt-[373px] md:mt-[186.5px] mt-[93px]">
             <div>
@@ -344,7 +312,7 @@ function Home() {
                 <h2 className=" heading xl:text-[60px] md:text-[50px] text-[30px] font-normal tracking-[1.2px] text-black text-center">
                   Articles & News
                 </h2>
-                <p className=" tracking-[0.28px] paragraph text-black xl:text-[28px] md:text-[22px] text-[15px] text-center font-normal">
+                <p className=" tracking-[0.28px] paragraph text-black xl:text-[28px] md:text-[22px] text-[15px] text-center font-normal max-w-[811px]">
                   It is a long established fact that a reader will be distracted
                   by the of readable content of a page when lookings at its
                   layouts the points of using.

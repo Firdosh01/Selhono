@@ -37,6 +37,7 @@ body {
   /* padding-inline: 355px; */
   max-width: calc(1920px - 355px);
   margin-inline: auto;
+  padding-inline: 30px;
   /* background-color: red; */
 }
 .nav_container {
@@ -93,7 +94,6 @@ padding:  4px 5px 8px 11px;
   }
   .blog_Card img {
     border-radius: 25px 25px 0px 0px;
-
   }
 }
 
@@ -101,8 +101,6 @@ padding:  4px 5px 8px 11px;
   .container {
     padding-inline: 20px;
   }
-
-  
 }
 .shap {
   border-radius: 250px 0px 0px 0px;

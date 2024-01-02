@@ -19,11 +19,11 @@ export default function Testimonial() {
                 <img src={testimonialImg1} alt="" className="rounded-full md:h-[77px] md:w-[77px] h-[55px] w-[55px]" />
                 <div>
                   <h4 className=" text-black lg:text-[25px]  text-[15px] font-normal leading-[150%] tracking-[0.25px] font-DMSerif">Natasha </h4>
-                  <span className=" lg:text-[18px] md:text-[12px] text-[10px] font-Jost text-richBlack font-normal leading-[150%] tracking-[0.18px]">Moscow, Russia</span>
+                  <span className=" lg:text-[18px] md:text-[15px] text-[10px] font-Jost text-richBlack font-normal leading-[150%] tracking-[0.18px]">Moscow, Russia</span>
                 </div>
               </div>
               <div className="mt-[25px]">
-                <p className="font-normal  paragraph xl:text-[22px] md:text-[18px] text-[15px] text-richBlack">
+                <p className="font-normal  paragraph lg:text-[22px] md:text-[18px] text-[15px] text-richBlack">
                   Lorem Ipsum is simply dummy text of the typesetting industry.
                   Ipsum has been.
                 </p>
@@ -39,7 +39,7 @@ export default function Testimonial() {
                 </div>
               </div>
               <div className="mt-[25px]">
-                <p className="font-normal  paragraph xl:text-[22px] md:text-[18px] text-[15px] text-richBlack">
+                <p className="font-normal  paragraph lg:text-[22px] md:text-[18px] text-[15px] text-richBlack">
                   Lorem Ipsum is simply dummy text of the typesetting industry.
                   Ipsum has been.
                 </p>
@@ -55,7 +55,7 @@ export default function Testimonial() {
                 </div>
               </div>
               <div className="mt-[25px]">
-                <p className="font-normal  paragraph xl:text-[22px] md:text-[18px] text-[15px]  text-richBlack">
+                <p className="font-normal  paragraph lg:text-[22px] md:text-[18px] text-[15px]  text-richBlack">
                   Lorem Ipsum is simply dummy text of the typesetting industry.
                   Ipsum has been.
                 </p>

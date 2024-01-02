@@ -16,20 +16,22 @@ export default function About() {
 
       <div className="wrapper">
         <div className="container">
-          <div className="md:mt-[133px] mt-[60px] flex-col flex justify-center items-center sm:gap-[34px] gap-[20px] text-center relative">
-            <blockquote className="text-center heading tracking-[0.7px] lg:text-[35px] md:text-[25px] text-[18px]  max-w-[751px]">
+          <div className=" md:mt-[133px] mt-[60px] relative max-w-[751px] left-1/2 -translate-x-2/4">
+          <div className="flex-col flex  items-center sm:gap-[34px] gap-[20px] text-center">
+            <blockquote className="text-center heading tracking-[0.7px] lg:text-[35px] md:text-[25px] text-[18px] ">
               I like an interior that defies labeling. I don't really want
               someone to walk into a room and know that I did it
             </blockquote>
             <span className="paragraph md:text-[25px] text-[15px] tracking-[0.25px] font-normal text-richBlack text-center">
               BUNNY WILLIAMS
             </span>
-            <div className="absolute top-0 right-[-4px] w-[4px] bg-black h-full"></div>
-            <div className="absolute top-0 left-[-3px] w-[4px] bg-black h-full"></div>
+            <div className="absolute top-0 right-[-4px] md:w-[4px] w-[1px] bg-black h-full"></div>
+            <div className="absolute top-0 left-[-3px] md:w-[4px] bg-black w-[1px] h-full"></div>
+          </div>
           </div>
 
           <div className="flex md:mt-[133px] mt-[50px] items-center md:flex-row flex-col justify-between">
-            <div className="xl:max-w-[500px] md:w-[45%]">
+            <div className="lg:max-w-[500px] md:w-[45%]">
               <h2 className="heading text-black xl:text-[50px] md:text-[40px] text-[30px]">
                 What We Do
               </h2>
@@ -54,7 +56,7 @@ export default function About() {
                 src={rectangleImg1}
                 alt="rectangleImg1"
                 loading="lazy"
-                className="object-cover w[718px] w-full h-full h[500px] rounded-[130px_0px_0px_0px]"
+                className="object-cover w-[718px] h-full h[500px] rounded-[130px_0px_0px_0px]"
               />
             </div>
           </div>
@@ -65,7 +67,7 @@ export default function About() {
                 src={rectangleImg2}
                 alt="rectangleImg1"
                 loading="lazy"
-                className="object-cover w[718px] w-full h-full h[500px] rounded-[0px_130px_0px_0px]"
+                className="object-cover w-[718px]  h-full h[500px] rounded-[0px_130px_0px_0px]"
               />
             </div>
             <div className="xl:max-w-[500px] md:w-[45%]">
@@ -95,8 +97,8 @@ export default function About() {
           </div>
 
           <div className="md:mt-[296px] mt-[140px]">
-            <div>
-              <h2 className="heading text-black xl:text-[50px] md:text-[40px] text-[30px] tracking-[1px] text-center">
+            <div className="flex items-center justify-center">
+              <h2 className="heading text-black xl:text-[50px] md:text-[40px] text-[30px] tracking-[1px] text-center max-w-[634px]">
                 Creative project? Let's have a productive talk.
               </h2>
             </div>

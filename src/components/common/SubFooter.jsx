@@ -4,7 +4,7 @@ import CTABtn from "../common/Button";
 
 export default function SubFooter() {
   return (
-    <div className="relative">
+    <div>
       <div className="relative">
         <img
           src={subFooterImg}
@@ -22,7 +22,7 @@ export default function SubFooter() {
             <div className="xl:mt-[32px] mt-[15px]">
               <CTABtn
                 active={true}
-                linkto={"/contact"}
+                linkto={"/contact-us/"}
                 children={"Contact With Us"}
                 style={
                   "xl:py-[26px] xl:px-[37px] md:py-[15px] md:px-[17px] py-[7px] px-[8px] md:gap-[11px] gap-[5px]"

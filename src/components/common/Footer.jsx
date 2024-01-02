@@ -32,11 +32,11 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="flex gap-[101px] gap[50px]  justify-between ">
+          <div className="flex gap-[101px] justify-between">
             {FooterLinks.map((ele, i) => {
               return (
                 <div key={i}>
-                  <h3 className="font-black heading xl:text-[25px] text-[17px] w-[120px] bg-burlywood-150">
+                  <h3 className="font-black heading xl:text-[25px] text-[17px] w-[120px]">
                     {ele.title}
                   </h3>
                   <div className="flex flex-col gap-4 mt-[9px]">
