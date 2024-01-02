@@ -5,7 +5,7 @@ import testimonialImg3 from "../../assets/Photo (2).jpg";
 export default function Testimonial() {
   return (
     <div>
-      <div className=" bg-burlywood-100 md:rounded-[50px] rounded-[20px]">
+      <div className=" bg-burlywood-100 md:rounded-[50px] rounded-[20px] w-full">
         <div className="flex flex-col xl:py-[88px] py-[40px] gap-[38px]">
           <h2 className="text-center heading xl:text-[50px] md:text-[40px] text-[20px] tracking-[1px] text-white">
             What the People Thinks <br />
@@ -16,7 +16,7 @@ export default function Testimonial() {
           
             <div className="bg-white xl:px-[37px] md:px-[20px]  px-[15px] xl:pt-[53px] md:pt-[29px] xl:pb-[54px] md:pb-[30px] py-[15px] rounded-2xl">
               <div className="flex  lg:gap-[23px] gap-[5px] items-center">
-                <img src={testimonialImg1} alt="" className="rounded-full" />
+                <img src={testimonialImg1} alt="" className="rounded-full md:h-[77px] md:w-[77px] h-[55px] w-[55px]" />
                 <div>
                   <h4 className=" text-black lg:text-[25px]  text-[15px] font-normal leading-[150%] tracking-[0.25px] font-DMSerif">Natasha </h4>
                   <span className=" lg:text-[18px] md:text-[12px] text-[10px] font-Jost text-richBlack font-normal leading-[150%] tracking-[0.18px]">Moscow, Russia</span>
@@ -32,7 +32,7 @@ export default function Testimonial() {
 
             <div className="bg-white  xl:px-[37px] md:px-[20px] px-[15px] xl:pt-[53px] md:pt-[29px] xl:pb-[54px] md:pb-[30px] py-[15px] rounded-2xl">
               <div className="flex  lg:gap-[23px] gap-[5px] items-center">
-                <img src={testimonialImg2} alt="" className="rounded-full " />
+                <img src={testimonialImg2} alt="" className="rounded-full md:h-[77px] md:w-[77px] h-[55px] w-[55px]" />
                 <div>
                   <h4 className=" text-black lg:text-[22px]  text-[15px] font-normal leading-[150%] tracking-[0.22px] font-DMSerif">Raymond Galario </h4>
                   <span className="lg:text-[22px] md:text-[15px] text-[10px] font-Jost text-richBlack font-normal leading-[150%] tracking-[0.22px]">UK, London</span>
@@ -48,7 +48,7 @@ export default function Testimonial() {
 
             <div className="bg-white xl:px-[37px] md:px-[20px] px-[15px] xl:pt-[53px] md:pt-[29px] xl:pb-[54px] md:pb-[30px] py-[15px]  rounded-2xl">
               <div className="flex lg:gap-[23px] gap-[5px] items-center">
-                <img src={testimonialImg3} alt="" className="rounded-full" />
+                <img src={testimonialImg3} alt="" className="rounded-full md:h-[77px] md:w-[77px] h-[55px] w-[55px]" />
                 <div>
                   <h4 className=" text-black lg:text-[22px] text-[15px] font-normal leading-[150%] tracking-[0.22px] font-DMSerif">Benny Roll </h4>
                   <span className=" lg:text-[22px] md:text-[15px] text-[10px] font-Jost text-richBlack font-normal leading-[150%] tracking-[0.22px]">USA, New York</span>

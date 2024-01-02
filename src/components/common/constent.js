@@ -21,7 +21,7 @@ export const navigation = [
   {
     id: 4,
     link: "Project",
-    path: "/our-project/",
+    path: "/our-projects/",
   },
   {
     id: 5,

@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className="wrapper">
+    <footer className="wrapper">
       <div className="container">
         <div className="md:flex  xl:gap-[101px] gap-[50px]   grid grid-cols-1">
-          <div className="lg:w-[393px]">
+          <div className="md:w-[393px]">
             <div className="flex gap-[7px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,11 +32,11 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="flex xl:gap-[101px] gap-[50px]  justify-between">
+          <div className="flex gap-[101px] gap[50px]  justify-between ">
             {FooterLinks.map((ele, i) => {
               return (
                 <div key={i}>
-                  <h3 className="font-black heading xl:text-[25px] text-[17px]">
+                  <h3 className="font-black heading xl:text-[25px] text-[17px] w-[120px] bg-burlywood-150">
                     {ele.title}
                   </h3>
                   <div className="flex flex-col gap-4 mt-[9px]">
@@ -56,7 +56,7 @@ export default function Footer() {
             })}
           </div>
           <div>
-            <div className="flex flex-col gap-[17px]">
+            <div className="flex flex-col gap-[17px] w-[258px]">
               <h1 className="font-black heading xl:text-[25px] text-[17px">Contact</h1>
               <div className="flex flex-col gap-4">
                 <span className="paragraph  text-richBlack font-normal xl:text-[22px] text-[15px] tracking-[0.22px] leading-[33px] font-Jost" >
@@ -70,6 +70,6 @@ export default function Footer() {
           
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

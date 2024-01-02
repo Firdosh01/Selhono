@@ -6,7 +6,7 @@ import Logo4 from '../../assets/Frame (2).png'
 function Logos() {
   return (
     <div>
-      <div className='flex items-center'>
+      <div className='flex items-center justify-between'>
         <div className='w-[300px] h-[100px] '>
           <img src={Logo1} alt="" className='w-full h-full py-[25px] px-[49px] select-none' />
         </div>

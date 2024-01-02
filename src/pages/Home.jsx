@@ -18,11 +18,11 @@ function Home() {
         <div className="container">
           <div className="hero_img md:mt-[154px] mt-[50px] relative">
             <img src={heroImg} alt="" className="w-full h-full select-none" />
-            <div className=" absolute sm:top-[73px] sm:left-[25px] sm:w-[60%] top-[30px] left-[10px] w-[80%]">
-              <h1 className="font-DMSerif lg:text-[65px] font-normal leading-[125%] text-white sm:text-[2.5rem] text-[1.7rem]">
+            <div className=" absolute sm:top-[73px] sm:left-[25px] left-[10px] top-[30px] md:max-w-[470px]">
+              <h1 className="font-DMSerif lg:text-[65px] sm:text-[2.8rem]  text-[1.5rem]  font-normal leading-[125%] text-white ">
                 Let's make your home beautiful together
               </h1>
-              <span className=" font-Inter text-white font-medium sm:text-[22px]  text-[12px] md:mt-[9px] md:leading-[33px]">
+              <span className=" font-Inter text-white font-medium sm:text-[22px]  text-[12px] md:mt-[9px] md:leading-[33px] tracking-[0.22px]">
                 There are many variations of the passages of lorem Ipsum
                 fromavailable, majority.
               </span>
@@ -410,9 +410,9 @@ function Home() {
       <section className="md:mt-[119px] mt-[59.50px]">
         <SubFooter />
       </section>
-      <footer className="mt-[41px]">
+      <div className="mt-[41px]">
         <Footer />
-      </footer>
+      </div>
     </div>
   );
 }
