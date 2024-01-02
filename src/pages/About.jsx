@@ -9,7 +9,7 @@ import Frame from "../components/Frame";
 
 export default function About() {
   return (
-    <div className="md:mt-[66px] mt-[33px]">
+    <div >
       <div>
         <Frame frameImg={aboutFrame} frameTitle={"About Us"} />
       </div>

@@ -35,6 +35,25 @@ export const navigation = [
   },
 ];
 
+export const Works = [
+  {
+    id: 1,
+    name: "Project Plan",
+    desc: "There are many variations of the passages of lorem Ipsum from available, majority."
+  },
+  {
+    id: 2,
+    name: "Interior Work",
+    desc: "There are many variations of the passages of lorem Ipsum from available, majority."
+  },
+  {
+    id: 3,
+    name: "Realization",
+    desc: "There are many variations of the passages of lorem Ipsum from available, majority."
+  },
+
+]
+
 export const Blogs = [
   {
     id: 1,
@@ -82,3 +101,36 @@ export const FooterLinks = [
     ],
   },
 ];
+
+export const services = [
+  {
+    id: 1,
+    name: "Project Plan",
+    desc: "There are many variations of the passages of lorem Ipsum from available, majority."
+  },
+  {
+    id: 1,
+    name: "Interior Work",
+    desc: "There are many variations of the passages of lorem Ipsum from available, majority."
+  },
+  {
+    id: 1,
+    name: "Retail Design",
+    desc: "There are many variations of the passages of lorem Ipsum from available, majority."
+  },
+  {
+    id: 1,
+    name: "2d/3d Art Work",
+    desc: "There are many variations of the passages of lorem Ipsum from available, majority."
+  },
+  {
+    id: 1,
+    name: "Interior Work",
+    desc: "There are many variations of the passages of lorem Ipsum from available, majority."
+  },
+  {
+    id: 1,
+    name: "Decoration Work",
+    desc: "There are many variations of the passages of lorem Ipsum from available, majority."
+  },
+]

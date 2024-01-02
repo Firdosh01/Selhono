@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Frame({ frameImg, frameTitle }) {
   return (
-    <div>
+    <div className="md:mt-[66px] mt-[33px]">
       <div className="relative">
         <img
           src={frameImg}
