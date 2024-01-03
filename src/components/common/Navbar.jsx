@@ -20,7 +20,7 @@ export default function Navbar() {
                 fill="#CDA274"
               />
             </svg>
-            <h3 className="uppercase lg:text-[40px] text-[20px] font-normal leading-[50px] font-DMSerif">
+            <h3 className="uppercase lg:text-[40px] text-[20px] font-normal leading-[50px] font-DMSerif select-none">
               selhono
             </h3>
           </div>

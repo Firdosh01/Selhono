@@ -17,7 +17,6 @@ body {
   margin-inline: auto;
   display: flex;
   flex-direction: column;
-  /* background-color: #c76904; */
 }
 .active {
   color: #c76904;
@@ -104,5 +103,4 @@ padding:  4px 5px 8px 11px;
 }
 .shap {
   border-radius: 250px 0px 0px 0px;
-  /* width: 20px; */
 }

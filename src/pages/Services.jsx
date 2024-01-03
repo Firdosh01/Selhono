@@ -2,6 +2,12 @@ import React from "react";
 import Frame from "../components/Frame";
 import serviceFrame from "../assets/Service/Rectangle 20.png";
 import { services } from "../components/common/constent";
+import conceptImg from "../assets/Service/Rectangle 21.png";
+import ideaImg from "../assets/Service/Rectangle 22.png";
+import designImg from "../assets/Service/Rectangle 23.png";
+import perfectionImg from "../assets/Service/Rectangle 24.png";
+import SubFooter from "../components/common/SubFooter";
+import Footer from "../components/common/Footer";
 
 export default function Services() {
   return (
@@ -47,7 +53,141 @@ export default function Services() {
               );
             })}
           </div>
+          <div className="md:mt-[210px] mt-[100px]">
+            <div>
+              <div className="flex flex-col gap-[9px] justify-center items-center">
+                <h2 className=" heading xl:text-[50px] md:text-[40px] text-[30px]  text-black text-center">
+                  How We Work
+                </h2>
+                <p className=" tracking-[0.22px] paragraph text-richBlack xl:text-[22px] md:text-[18px] text-[15px] text-center font-normal max-w-[802px]">
+                  It is a long established fact will be distracted.Lorem Ipsum
+                  is simply dummy text of the printing and typesetting industry.
+                </p>
+              </div>
+              <div className="mt-[120px]">
+                <div className="flex gap-[93px] justify-between md:flex-row flex-col  md:itemscenter relative">
+                  <div className="md:w-1/2">
+                    <img
+                      src={conceptImg}
+                      alt="conceptImg"
+                      loading="lazy"
+                      className="2xl:w-[625px] 2xl:h-[485px] object-cover select-none"
+                    />
+                  </div>
+                  <div className="absolute top-[-36px] right-0">
+                    <h4 className=" lg:text-[90px] md:text-[60px] text-[40px] text-burlywood-150 font-normal font-DMSerif leading-[150%] tracking-[0.9px]">
+                      01
+                    </h4>
+                  </div>
+                  <div className="md:w-1/2 relative 2xl:top-[250px] xl:top-[200px] lg:top-[150px] md:top-[130px] top-[40px] ">
+                    <div>
+                      <h2 className=" heading  lg:text-[35px] md:text-[25px] text-[18px] ">
+                        Concept & Details
+                      </h2>
+                      <p className=" tracking-[0.22px] paragraph text-richBlack xl:text-[22px] md:text-[18px] text-[15px]  font-normal max-w-[456px] mt-[11px]">
+                        It is a long established fact will be distracted.Lorem
+                        Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex gap-[93px] justify-between md:flex-row  flex-col-reverse relative mt-[121px]">
+                  <div className="absolute top-[0] left-0">
+                    <h4 className=" lg:text-[90px] md:text-[60px] text-[40px] text-burlywood-150 font-normal font-DMSerif leading-[150%] tracking-[0.9px]">
+                      02
+                    </h4>
+                  </div>
+                  <div className=" relative 2xl:top-[292px] md:w-1/2 xl:top-[200px] lg:top-[150px] md:top-[130px] top-[40px] ">
+                    <div>
+                      <h2 className=" heading  lg:text-[35px] md:text-[25px] text-[18px] ">
+                        Idea for Work
+                      </h2>
+                      <p className=" tracking-[0.22px] paragraph text-richBlack xl:text-[22px] md:text-[18px] text-[15px]  font-normal max-w-[456px] mt-[9px]">
+                        It is a long established fact will be distracted.Lorem
+                        Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="md:w-1/2">
+                    <img
+                      src={ideaImg}
+                      alt="ideaImg"
+                      loading="lazy"
+                      className="2xl:w-[625px] 2xl:h-[485px] object-cover w-full h-full select-none"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex gap-[93px] justify-between md:flex-row flex-col  relative mt-[121px]">
+                  <div className="md:w-1/2">
+                    <img
+                      src={designImg}
+                      alt="designImg"
+                      loading="lazy"
+                      className="2xl:w-[625px] 2xl:h-[485px] object-cover w-full h-full select-none"
+                    />
+                  </div>
+                  <div className="absolute top-[-36px] right-0">
+                    <h4 className="lg:text-[90px] md:text-[60px] text-[40px] text-burlywood-150 font-normal font-DMSerif leading-[150%] tracking-[0.9px]">
+                      03
+                    </h4>
+                  </div>
+                  <div className=" relative 2xl:top-[250px] xl:top-[200px] lg:top-[150px] md:top-[130px] top-[40px] md:w-1/2">
+                    <div>
+                      <h2 className=" heading  lg:text-[35px] md:text-[25px] text-[18px] ">
+                        Design
+                      </h2>
+                      <p className=" tracking-[0.22px] paragraph text-richBlack xl:text-[22px] md:text-[18px] text-[15px]  font-normal max-w-[456px] mt-[11px]">
+                        It is a long established fact will be distracted.Lorem
+                        Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex gap-[93px] justify-between md:flex-row  flex-col-reverse relative mt-[121px]">
+                  <div className="absolute top-[0] left-0">
+                    <h4 className=" lg:text-[90px] md:text-[60px] text-[40px] text-burlywood-150 font-normal font-DMSerif leading-[150%] tracking-[0.9px]">
+                      04
+                    </h4>
+                  </div>
+                  <div className=" relative 2xl:top-[292px] md:w-1/2 xl:top-[200px] lg:top-[150px] md:top-[130px] top-[40px] ">
+                    <div>
+                      <h2 className=" heading  lg:text-[35px] md:text-[25px] text-[18px] ">
+                        Perfection
+                      </h2>
+                      <p className=" tracking-[0.22px] paragraph text-richBlack xl:text-[22px] md:text-[18px] text-[15px]  font-normal max-w-[456px] mt-[9px]">
+                        It is a long established fact will be distracted.Lorem
+                        Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="md:w-1/2">
+                    <img
+                      src={perfectionImg}
+                      alt="perfectionImg"
+                      loading="lazy"
+                      className="2xl:w-[625px] 2xl:h-[485px] object-cover w-full h-full select-none"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div className="md:mt-[378px] mt-[150px]">
+        <SubFooter />
+      </div>
+      <div className="mt-[41px]">
+        <Footer />
       </div>
     </div>
   );
