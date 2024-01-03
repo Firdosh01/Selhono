@@ -8,6 +8,7 @@ import designImg from "../assets/Service/Rectangle 23.png";
 import perfectionImg from "../assets/Service/Rectangle 24.png";
 import SubFooter from "../components/common/SubFooter";
 import Footer from "../components/common/Footer";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
@@ -21,6 +22,8 @@ export default function Services() {
             {services.map((service) => {
               return (
                 <>
+                <Link to={`/services/${service.name}`}>
+
                   <div className="flex flex-col gap-[52px] items-center md:max-w-[358px] rounded-[30px] hover:bg-[#F9F9F9] md:py-[83px] py-[50px] px-[20px] duration-300 cursor-pointer group">
                     <div className="flex flex-col items-center md:items-center">
                       <span className="text-black   md:text-[25px] text-[20px]  font-DMSerif font-normal leading-[125%] group-hover:text-burlywood-150">
@@ -49,6 +52,7 @@ export default function Services() {
                       </svg>
                     </div>
                   </div>
+                  </Link>
                 </>
               );
             })}

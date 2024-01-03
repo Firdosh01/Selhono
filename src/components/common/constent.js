@@ -109,27 +109,27 @@ export const services = [
     desc: "There are many variations of the passages of lorem Ipsum from available, majority."
   },
   {
-    id: 1,
+    id: 2,
     name: "Interior Work",
     desc: "There are many variations of the passages of lorem Ipsum from available, majority."
   },
   {
-    id: 1,
+    id: 3,
     name: "Retail Design",
     desc: "There are many variations of the passages of lorem Ipsum from available, majority."
   },
   {
-    id: 1,
+    id: 4,
     name: "2d/3d Art Work",
     desc: "There are many variations of the passages of lorem Ipsum from available, majority."
   },
   {
-    id: 1,
+    id: 5,
     name: "Interior Work",
     desc: "There are many variations of the passages of lorem Ipsum from available, majority."
   },
   {
-    id: 1,
+    id: 6,
     name: "Decoration Work",
     desc: "There are many variations of the passages of lorem Ipsum from available, majority."
   },
