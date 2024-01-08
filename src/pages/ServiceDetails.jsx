@@ -4,10 +4,13 @@ import Frame from "../components/Frame";
 import singleServicesFrame from "../assets/Service/SingleServices.png";
 import Logos from "../components/common/Logos";
 import videoPlayingImg from '../assets/Service/Rectangle 25.png'
+import servicesImg from '../assets/Service/Rectangle 26 (1).png'
+import CTABtn from '../components/common/Button'
+import Exprience from "../components/common/Exprience";
+import Footer from "../components/common/Footer";
 
 export default function ServiceDetails() {
   const params = useParams();
-  console.log(params.name);
   return (
     <section>
       <div>
@@ -52,7 +55,7 @@ export default function ServiceDetails() {
           <div className="md:mt-[208px] mt-[100px]">
             <div className="relative ">
               <img src={videoPlayingImg} alt=""  className="w-full h-full"/>
-             <div className="absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 md:w-[172px]  md:h-[172px] w-[90px] h-[90px]">
+             <div className="absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 md:w-[172px]  md:h-[172px] w-[50px] h-[50px]">
                 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 172 172" fill="none">
                      <g filter="url(#filter0_d_31_32)">
                         <circle cx="86" cy="76" r="66" fill="white"/>
@@ -74,7 +77,87 @@ export default function ServiceDetails() {
               </div>
             </div>
           </div>
+          <div>
+            <div className="flex mt-[135px] itemscenter justify-center sm:flex-row flex-col">
+            <div className="flex flex-col gap-[23px] maxw-[435px] relative">
+              <h3 className=" heading xl:text-[50px] md:text-[40px] text-[30px]  text-black  tracking-[1px]">Use of Interior</h3>
+              <div className="flex flex-col md:gap-[34px] gap-[10px] sm:mr-[83px]">
+                <div className="flex gap-[15px] items-center">
+                  <span className=" text-burlywood-100 font-DMSerif xl:text-[20px] md:text-[13px] text-[10px] font-normal leading-[125%] tracking-[0.4px]">1</span>
+                  <p className=" paragraph text-richBlack xl:text-[22px] md:text-[15px] text-[12px] font-normal leading-[270%] tracking-[0.22px]">We provide high quality design services.</p>
+                </div>
+                <div className="flex gap-[15px] items-center">
+                  <span className=" text-burlywood-100 font-DMSerif xl:text-[20px] md:text-[13px] text-[10px] font-normal leading-[125%] tracking-[0.4px]">2</span>
+                  <p className=" paragraph text-richBlack xl:text-[22px] md:text-[15px] text-[12px] font-normal leading-[270%] tracking-[0.22px]"> Project on time and Latest Design.</p>
+                </div>
+                <div className="flex gap-[15px] items-center">
+                  <span className=" text-burlywood-100 font-DMSerif xl:text-[20px] md:text-[13px] text-[10px] font-normal leading-[125%] tracking-[0.4px]">3</span>
+                  <p className=" paragraph text-richBlack xl:text-[22px] md:text-[15px] text-[12px] font-normal leading-[270%] tracking-[0.22px]"> Scientific Skills For getting a better result.</p>
+                </div>
+                <div className="flex gap-[15px] items-center">
+                  <span className=" text-burlywood-100 font-DMSerif xl:text-[20px] md:text-[13px] text-[10px] font-normal leading-[125%] tracking-[0.4px]">4</span>
+                  <p className=" paragraph text-richBlack xl:text-[22px] md:text-[15px] text-[12px] font-normal leading-[270%] tracking-[0.22px]"> Renovations Benefit of Service</p>
+                </div>
+                <div className="flex gap-[15px] items-center">
+                  <span className=" text-burlywood-100 font-DMSerif xl:text-[20px] md:text-[13px] text-[10px] font-normal leading-[125%] tracking-[0.4px]">5</span>
+                  <p className=" paragraph text-richBlack xl:text-[22px] md:text-[15px] text-[12px] font-normal leading-[270%] tracking-[0.22px]"> We are confident about our projects.</p>
+                </div>
+              </div>
+            <div className="absolute sm:block hidden top-[50%] right-0 bg-[#CECECE] w-[1px] h-[249px] -translate-y-2/4" />
+            </div>
+            <div className="flex flex-col gap-[23px] maxw-[435px] sm:ml-[83px] sm:mt-0 mt-[30px]  items-end sm:items-start">
+              <h3 className=" heading xl:text-[50px] md:text-[40px] text-[30px]  text-black  tracking-[1px] text-center">Make An Art</h3>
+              <div className="flex flex-col md:gap-[34px] gap-[10px]">
+                <div className="flex gap-[15px] items-center">
+                  <span className=" text-burlywood-100 font-DMSerif xl:text-[20px] md:text-[13px] text-[10px] font-normal leading-[125%] tracking-[0.4px]">1</span>
+                  <p className=" paragraph text-richBlack xl:text-[22px] md:text-[15px] text-[12px] font-normal leading-[270%] tracking-[0.22px]">We provide high quality design services.</p>
+                </div>
+                <div className="flex gap-[15px] items-center">
+                  <span className=" text-burlywood-100 font-DMSerif xl:text-[20px] md:text-[13px] text-[10px] font-normal leading-[125%] tracking-[0.4px]">2</span>
+                  <p className=" paragraph text-richBlack xl:text-[22px] md:text-[15px] text-[12px] font-normal leading-[270%] tracking-[0.22px]"> Project on time and Latest Design.</p>
+                </div>
+                <div className="flex gap-[15px] items-center">
+                  <span className=" text-burlywood-100 font-DMSerif xl:text-[20px] md:text-[13px] text-[10px] font-normal leading-[125%] tracking-[0.4px]">3</span>
+                  <p className=" paragraph text-richBlack xl:text-[22px] md:text-[15px] text-[12px] font-normal leading-[270%] tracking-[0.22px]"> Scientific Skills For getting a better result.</p>
+                </div>
+                <div className="flex gap-[15px] items-center">
+                  <span className=" text-burlywood-100 font-DMSerif xl:text-[20px] md:text-[13px] text-[10px] font-normal leading-[125%] tracking-[0.4px]">4</span>
+                  <p className=" paragraph text-richBlack xl:text-[22px] md:text-[15px] text-[12px] font-normal leading-[270%] tracking-[0.22px]"> Renovations Benefit of Service</p>
+                </div>
+                <div className="flex gap-[15px] items-center">
+                  <span className=" text-burlywood-100 font-DMSerif xl:text-[20px] md:text-[13px] text-[10px] font-normal leading-[125%] tracking-[0.4px]">5</span>
+                  <p className=" paragraph text-richBlack xl:text-[22px] md:text-[15px] text-[12px] font-normal leading-[270%] tracking-[0.22px]"> We are confident about our projects.</p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div className="flex gap-[99px] justify-between md:mt-[247px] mt-[100px] md:flex-row flex-col">
+            <div className="xl:w-[593px] xl:h-[310px] md:w-[450px] md:h-[250px]">
+              <img src={servicesImg} alt="" className="w-full h-full" />
+            </div>
+            <div className="md:w-1/2">
+              <h1 className=" heading xl:text-[50px] md:text-[40px] text-[30px] tracking-[1px] text-black max-w-[518px]">We love design.That's how we got here.</h1>
+              <p className=" tracking-[0.22px] paragraph xl:text-[22px] md:text-[15px] text-[12px]   font-normal  text-richBlack mt-[11px] max-w-[500px]">It is a long established fact that a reader will be distracted by the of readable content ..</p>
+              <div className="mt-[32px]">
+                <CTABtn
+                linkto={"/our-projects/"}
+                active={false}
+                children={"Our Portfolio"}
+                style={
+                  "xl:py-[26px] xl:px-[40px] md:py-[15px] md:px-[20px] py-[7px] px-[10px] md:gap-[11px] gap-[5px]"
+                }
+                />
+              </div>
+            </div>
+          </div>
+          <div className="md:mt-[150px] mt-[100px]">
+            <Exprience />
+          </div>
         </div>
+      </div>
+      <div className="md:mt-[300px] mt-[150px]">
+        <Footer />
       </div>
     </section>
   );
