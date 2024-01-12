@@ -2,6 +2,13 @@ import blogImg1 from "../../assets/BlogImg1.png";
 import blogImg2 from "../../assets/BlogImg2.png";
 import blogImg3 from "../../assets/BlogImg3.png";
 
+ /* projects */
+ import bedRoomImg1 from '../../assets/Projects/Rectangle 27.png' 
+ import bedRoomImg2 from '../../assets/Projects/Rectangle 28.png' 
+ import bedRoomImg3 from '../../assets/Projects/Rectangle 29.png' 
+ import bedRoomImg4 from '../../assets/Projects/Rectangle 30.png' 
+ import bedRoomImg5 from '../../assets/Projects/Rectangle 31.png' 
+ import bedRoomImg6 from '../../assets/Projects/Rectangle 32.png' 
 export const navigation = [
   {
     id: 1,
@@ -133,4 +140,43 @@ export const services = [
     name: "Decoration Work",
     desc: "There are many variations of the passages of lorem Ipsum from available, majority."
   },
+]
+
+export const projects = [
+  {
+    id: 1,
+    img: bedRoomImg1,
+    title: "Minimal Bedroom",
+    tag: "Decor / Artchitecture"
+  },
+    {
+    id: 2,
+    img: bedRoomImg2,
+    title: "Minimal Bedroom",
+    tag: "Decor / Artchitecture"
+  },
+  {
+    id: 3,
+    img: bedRoomImg3,
+    title: "Minimal Bedroom",
+    tag: "Decor / Artchitecture"
+  },
+  {
+    id: 4,
+    img: bedRoomImg4,
+    title: "Minimal Bedroom",
+    tag: "Decor / Artchitecture"
+  },
+  {
+    id: 5,
+    img: bedRoomImg5,
+    title: "Minimal Bedroom",
+    tag: "Decor / Artchitecture"
+  },
+  {
+    id: 6,
+    img: bedRoomImg6,
+    title: "Minimal Bedroom",
+    tag: "Decor / Artchitecture"
+  }
 ]

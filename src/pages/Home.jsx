@@ -114,7 +114,7 @@ function Home() {
                         Decor / Artchitecture
                       </p>
                     </div>
-                    <div className="lg:w-[70px] lg:h-[70px] w-[40px] h-[40px">
+                    <div className="lg:w-[70px] lg:h-[70px] w-[40px] h-[40px] cursor-pointer">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 70 70"
@@ -149,7 +149,7 @@ function Home() {
                         Decor / Artchitecture
                       </p>
                     </div>
-                    <div className="lg:w-[70px] lg:h-[70px] w-[40px] h-[40px">
+                    <div className="lg:w-[70px] lg:h-[70px] w-[40px] h-[40px] cursor-pointer">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 70 70"
@@ -184,7 +184,7 @@ function Home() {
                         Decor / Artchitecture
                       </p>
                     </div>
-                    <div className="lg:w-[70px] lg:h-[70px] w-[40px] h-[40px">
+                    <div className="lg:w-[70px] lg:h-[70px] w-[40px] h-[40px] cursor-pointer">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 70 70"
@@ -219,7 +219,7 @@ function Home() {
                         Decor / Artchitecture
                       </p>
                     </div>
-                    <div className="lg:w-[70px] lg:h-[70px] w-[40px] h-[40px">
+                    <div className="lg:w-[70px] lg:h-[70px] w-[40px] h-[40px] cursor-pointer">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 70 70"
@@ -261,7 +261,7 @@ function Home() {
               </div>
               <div className="grid items-center md:grid-cols-3 grid-cols-1 gap-[27px] mt-[119px]">
                 {Blogs.map((blog) => (
-                  <div className="blog_Card flex-col flex gap-[21px]">
+                  <div className="blog_Card flex-col flex gap-[21px] cursor-pointer">
                     <div className="relative ">
                       <img
                         src={blog.img}
