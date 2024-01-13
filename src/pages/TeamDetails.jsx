@@ -19,7 +19,7 @@ export default function TeamDetails() {
   return (
     <section>
       <div>
-        <Frame frameImg={teamFrame} frameTitle={"Team"} />
+        <Frame frameImg={teamFrame} frameTitle={user.name} />
       </div>
       <div className="wrapper">
         <div className="container">
@@ -89,6 +89,35 @@ export default function TeamDetails() {
                loading="lazy"
                className="object-cover w-full h-full lg:rounded-[30px] rounded-[20px]" 
                />
+            </div>
+          </div>
+          <div>
+            <h2 className="lg:text-[50px] md:text-[40px] text-[30px] heading   tracking-[0.25px] text-black">Short Biography​</h2>
+            <p className="paragraph lg:text-[22px] text-[15px] text-richBlack font-normal tracking-[0.22px] mt-[18px]">
+               Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, 
+               but the majority have suffered alteration in some form, njecthumour
+               randomised words which don't look even slightly believable.
+
+               Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined
+               but the majority have suffered alteration in some form chunks as necessary.
+            </p>
+          </div>
+          <div className="flex items-start justify-between mt-[45px]">
+            <div className="flex flex-col gap-[30px]">
+              <div>
+                <h5>Simplicity and Functionality</h5>
+                 <p>
+                    Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in belief.
+
+                    There are many variations of passages of Lorem Ipsum from available, but the majority have suffered alteration in some form, njecthumour
+                 </p>
+              </div>
+            </div>
+            <div>
+              <h5>Qustion And Answer</h5>
+              <p>
+                 Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.
+              </p>
             </div>
           </div>
         </div>
