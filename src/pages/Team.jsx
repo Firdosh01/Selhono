@@ -5,6 +5,7 @@ import { teamMembers } from '../components/common/constent'
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import Footer from '../components/common/Footer';
+import { Link } from 'react-router-dom';
 
 export default function Team() {
   return (
@@ -17,8 +18,9 @@ export default function Team() {
           <div className='grid lg:grid-cols-4 grid-cols-2 gap-[22px] gap-y-[50px] mt-[89px]'>
             {teamMembers.map((teamMember) => {
               return (
+               <Link to={`/our-team/${teamMember.id}`}>
                 <div className='flex flex-col gap-[17px]'>
-                  <div className=''>
+                  <div className='cursor-pointer '>
                     <img src={teamMember.img} alt="" className='object-cover w-full h-full select-none' />
                   </div>
                   <div className='flex flex-col gap-[16px] justify-center items-center'>
@@ -32,6 +34,7 @@ export default function Team() {
                     </div>
                   </div>
                 </div>
+                </Link>
               )
             })}
           </div>
