@@ -9,9 +9,20 @@ import articlesImg3 from "../../assets/BlogImg3.png";
  import bedRoomImg4 from '../../assets/Projects/Rectangle 30.png' 
  import bedRoomImg5 from '../../assets/Projects/Rectangle 31.png' 
  import bedRoomImg6 from '../../assets/Projects/Rectangle 32.png' 
+
+ /* Teams */
+ import teamImg1 from '../../assets/Team/Image (12).png'
+ import teamImg2 from '../../assets/Team/Image (13).png'
+ import teamImg3 from '../../assets/Team/Image (14).png'
+ import teamImg4 from '../../assets/Team/Image (15).png'
+ import teamImg5 from '../../assets/Team/Image (16).png'
+ import teamImg6 from '../../assets/Team/Image (17).png'
+ import teamImg7 from '../../assets/Team/Image (18).png'
+ import teamImg8 from '../../assets/Team/Image (19).png'
+
 export const navigation = [
   {
-    id: 1,
+    id: 1,  
     link: "Home",
     path: "/",
   },
@@ -179,4 +190,57 @@ export const projects = [
     title: "Minimal Bedroom",
     tag: "Decor / Artchitecture"
   }
+]
+
+
+export const teamMembers = [
+  {
+    id: 1,
+    img: teamImg1,
+    name:"Alex Johnson",
+    role: "Design, Australia"
+  },
+  {
+    id: 2,
+    img: teamImg2,
+    name:"Nattasha Julie",
+    role: "Design, Australia"
+  },
+  {
+    id: 3,
+    img: teamImg3,
+    name:"John Smith",
+    role: "Design, Australia"
+  },
+  {
+    id: 4,
+    img: teamImg4,
+    name:"Nora Owen",
+    role: "Design, Australia"
+  },
+  {
+    id: 5,
+    img: teamImg5,
+    name:"Parker	Carter",
+    role: "Design, Australia"
+  },
+  {
+    id: 6,
+    img: teamImg6,
+    name:"Avery	Jackson",
+    role: "Design, Australia"
+  },
+  {
+    id: 7,
+    img: teamImg7,
+    name:"Luna	James",
+    role: "Design, Australia"
+  },
+  {
+    id: 8,
+    img: teamImg8,
+    name:"Gianna	Mateo",
+    role: "Design, Australia"
+  },
+
 ]

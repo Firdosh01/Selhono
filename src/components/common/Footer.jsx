@@ -1,6 +1,10 @@
 import React from "react";
 import { FooterLinks } from "./constent";
 import { Link } from "react-router-dom";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io";
 
 export default function Footer() {
   return (
@@ -30,6 +34,12 @@ export default function Footer() {
                 It is a long established fact that a reader will be distracted
                 lookings.
               </p>
+            </div>
+            <div className="flex md:gap-[54px] gap-[20px] mt-[31px] md:text-[18px] text-[15px] cursor-pointer">
+              <FaFacebookF />
+              <FaTwitter />
+              <FaLinkedinIn />
+              <IoLogoInstagram />
             </div>
           </div>
           <div className="flex gap-[101px] justify-between">
