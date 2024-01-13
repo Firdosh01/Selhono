@@ -1,6 +1,6 @@
-import blogImg1 from "../../assets/BlogImg1.png";
-import blogImg2 from "../../assets/BlogImg2.png";
-import blogImg3 from "../../assets/BlogImg3.png";
+import articlesImg1 from "../../assets/BlogImg1.png";
+import articlesImg2 from "../../assets/BlogImg2.png";
+import articlesImg3 from "../../assets/BlogImg3.png";
 
  /* projects */
  import bedRoomImg1 from '../../assets/Projects/Rectangle 27.png' 
@@ -61,24 +61,24 @@ export const Works = [
 
 ]
 
-export const Blogs = [
+export const Articles = [
   {
     id: 1,
-    img: blogImg1,
+    img: articlesImg1,
     tag: "Kitchan Design",
     heading: "Let’s Get Solution For Building Construction Work",
     date: "26 December,2022 ",
   },
   {
     id: 2,
-    img: blogImg2,
+    img: articlesImg2,
     tag: "Living Design",
     heading: "Low Cost Latest Invented Interior Designing Ideas.",
     date: "22 November,2023  ",
   },
   {
     id: 3,
-    img: blogImg3,
+    img: articlesImg3,
     tag: "Interior Design",
     heading: "Best For Any Office & Business Interior Solution",
     date: "4 December,2023 ",

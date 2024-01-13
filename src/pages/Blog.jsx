@@ -1,9 +1,33 @@
 import React from "react";
 import Frame from "../components/Frame";
 import blogFrame from "../assets/Blog/Rectangle 20 (1).png";
-import latestImg from '../assets/Blog/Rectangle 34.png'
+import latestImg from "../assets/Blog/Rectangle 34.png";
+import articlesImg1 from "../assets/Blog/Rectangle 35.png";
+import articlesImg2 from "../assets/Blog/Rectangle 36.png";
+import articlesImg3 from "../assets/Blog/Rectangle 37.png";
+import Footer from "../components/common/Footer";
 
 export default function Blog() {
+  const blogArticles = [
+    {
+      id: 1,
+      img: articlesImg1,
+      heading: "Let’s Get Solution For Building Construction Work",
+      date: "26 December,2022",
+    },
+    {
+      id: 2,
+      img: articlesImg2,
+      heading: "Let’s Get Solution For Building Construction Work",
+      date: "26 December,2022",
+    },
+    {
+      id: 3,
+      img: articlesImg3,
+      heading: "Let’s Get Solution For Building Construction Work",
+      date: "26 December,2022",
+    },
+  ];
   return (
     <section>
       <div>
@@ -41,29 +65,100 @@ export default function Blog() {
             </div>
             <div className="flex lg:gap-[72px] gap-[20px] md:flex-row flex-col items-start mt-[34px] justify-between">
               <div className="md:max-w-[649px] md:max-h-[400px]">
-                <img src={latestImg} alt="" className="object-cover w-full h-full" />
+                <img
+                  src={latestImg}
+                  alt=""
+                  className="object-cover w-full h-full"
+                />
               </div>
               <div className="md:max-w-[489px] flex flex-col">
-                <h4 className="text-black  lg:text-[25px] text-[20px] font-DMSerif font-normal leading-[125%] tracking-[0.5px]">Low Cost Latest Invented Interior Designing Ideas</h4>
-                <p className="font-normal paragraph lg:text-[22px] text-[18px]  tracking-[0.22px] lg:mt-[22px] mt-[5px] text-richBlack">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief.
+                <h4 className="text-black  lg:text-[25px] text-[20px] font-DMSerif font-normal leading-[125%] tracking-[0.5px]">
+                  Low Cost Latest Invented Interior Designing Ideas
+                </h4>
+                <p className="font-normal paragraph lg:text-[22px] text-[18px]  tracking-[0.22px] lg:mt-[22px] mt-[5px] text-richBlack">
+                  Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
+                  turpis dignissim maximus.posuere in.Contrary to popular
+                  belief.
                   <br />
                   <br />
-                  Lorem Ipsum is not simply random text. It has roots in a piece of classica.</p>
-               <div  className="lg:mt-[41px] mt-[5px] flex justify-between items-center">
-                <div>
-                  <span className="font-normal paragraph lg:text-[16px] text-[12px]  tracking-[0.16px] lg:mt-[22px] mt-[10px] text-richBlack">26 December,2022 </span>
+                  Lorem Ipsum is not simply random text. It has roots in a piece
+                  of classica.
+                </p>
+                <div className="lg:mt-[41px] mt-[5px] flex justify-between items-center">
+                  <div>
+                    <span className="font-normal paragraph lg:text-[16px] text-[12px]  tracking-[0.16px] lg:mt-[22px] mt-[10px] text-richBlack">
+                      26 December,2022{" "}
+                    </span>
+                  </div>
+                  <div className="lg:w-[52px] lg:h-[52px] md:w-[40px] md:h-[40px] w-[35px] h-[35px]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 52 52"
+                      fill="none"
+                    >
+                      <circle cx="26" cy="26" r="26" fill="#F4F0EC" />
+                      <path
+                        d="M23.772 32.6855L29.7148 25.9998L23.772 19.3141"
+                        stroke="#292F36"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
                 </div>
-                <div className="lg:w-[52px] lg:h-[52px] md:w-[40px] md:h-[40px] w-[35px] h-[35px]">
-                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 52 52" fill="none">
-                   <circle cx="26" cy="26" r="26" fill="#F4F0EC"/>
-                   <path d="M23.772 32.6855L29.7148 25.9998L23.772 19.3141" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-               </div>
               </div>
             </div>
           </div>
+
+          <div className="mt-[141px]">
+            <h2 className=" heading lg:text-[50px] md:text-[40px] text-[30px] font-normal tracking-[1px] text-black">
+              Articles & News
+            </h2>
+            <div className="grid items-center md:grid-cols-3 grid-cols-1 gap-[71px] mt-[83px]">
+              {blogArticles.map((blogArticle) => (
+                <div className="flex flex-col cursor-pointer ">
+                  <div className="relative ">
+                    <img
+                      src={blogArticle.img}
+                      alt=""
+                      className="object-cover w-full h-full select-none"
+                    />
+                  </div>
+                  <div>
+                    <h2 className="heading text-black xl:text-[25px] md:text-[18px] tracking-[0.5px]">
+                      {blogArticle.heading}
+                    </h2>
+                    <div className="mt-[20px] flex justify-between items-center">
+                      <p className=" paragraph md:text-[16px] text-[15px] text-richBlack tracking-[0.16px]">
+                        {blogArticle.date}
+                      </p>
+                      <div className="xl:w-[52px] xl:h-[53px] w-[32px] h-[33px]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 52 52"
+                          fill="none"
+                        >
+                          <circle cx="26" cy="26" r="26" fill="#F4F0EC" />
+                          <path
+                            d="M23.772 32.6855L29.7148 25.9998L23.772 19.3141"
+                            stroke="#292F36"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
+      </div>
+      <div  className="md:mt-[190px] mt-[100px]">
+        <Footer />
       </div>
     </section>
   );

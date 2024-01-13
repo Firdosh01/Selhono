@@ -8,7 +8,7 @@ import bedroomImg1 from "../assets/Rectangle 4.png";
 import bedroomImg2 from "../assets/Rectangle 5.png";
 import bedroomImg3 from "../assets/Rectangle 6.png";
 import bedroomImg4 from "../assets/Rectangle 7.png";
-import { Blogs, Works } from "../components/common/constent";
+import { Articles, Works } from "../components/common/constent";
 import SubFooter from "../components/common/SubFooter";
 import Footer from "../components/common/Footer";
 import Exprience from "../components/common/Exprience";
@@ -260,27 +260,27 @@ function Home() {
                 </p>
               </div>
               <div className="grid items-center md:grid-cols-3 grid-cols-1 gap-[27px] mt-[119px]">
-                {Blogs.map((blog) => (
+                {Articles.map((article) => (
                   <div className="blog_Card flex-col flex gap-[21px] cursor-pointer">
                     <div className="relative ">
                       <img
-                        src={blog.img}
+                        src={article.img}
                         alt=""
                         className="object-cover w-full h-full select-none"
                       />
                       <div className="absolute bottom-[20.27px] left-[20px] ">
                         <span className="font-normal paragraph text-[16px] tracking-[0.16px] blog_tag text-white">
-                          {blog.tag}
+                          {article.tag}
                         </span>
                       </div>
                     </div>
                     <div>
                       <h2 className="heading text-black xl:text-[25px] md:text-[18px] tracking-[0.5px]">
-                        {blog.heading}
+                        {article.heading}
                       </h2>
                       <div className="mt-[30px] flex justify-between items-center">
                         <p className=" paragraph md:text-[16px] text-[15px] text-richBlack tracking-[0.16px]">
-                          {blog.date}
+                          {article.date}
                         </p>
                         <div className="xl:w-[52px] xl:h-[53px] w-[32px] h-[33px]">
                           <svg
