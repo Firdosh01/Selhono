@@ -1,6 +1,6 @@
 import React from "react";
 import Frame from "../components/Frame";
-import blogFrame from "../assets/Blog/Rectangle 20 (1).png";
+import blogFrame from "../assets/Blog/BlogFrame.jpg";
 import latestImg from "../assets/Blog/Rectangle 34.png";
 import articlesImg1 from "../assets/Blog/Rectangle 35.png";
 import articlesImg2 from "../assets/Blog/Rectangle 36.png";
@@ -67,7 +67,8 @@ export default function Blog() {
               <div className="md:max-w-[649px] md:max-h-[400px]">
                 <img
                   src={latestImg}
-                  alt=""
+                  alt="blog image"
+                  loading="lazy"
                   className="object-cover w-full h-full"
                 />
               </div>
@@ -117,11 +118,12 @@ export default function Blog() {
             </h2>
             <div className="grid items-center md:grid-cols-3 grid-cols-1 gap-[71px] mt-[83px]">
               {blogArticles.map((blogArticle) => (
-                <div className="flex flex-col cursor-pointer ">
+                <div key={blogArticle.id} className="flex flex-col cursor-pointer ">
                   <div className="relative ">
                     <img
                       src={blogArticle.img}
-                      alt=""
+                      alt="article image"
+                      loading="lazy"
                       className="object-cover w-full h-full select-none"
                     />
                   </div>

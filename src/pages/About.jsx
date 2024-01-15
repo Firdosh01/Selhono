@@ -65,7 +65,7 @@ export default function About() {
             <div className="md:w-1/2 md:mt-0 mt-[50px]">
               <img
                 src={rectangleImg2}
-                alt="rectangleImg1"
+                alt="rectangleImg2"
                 loading="lazy"
                 className="object-cover w-[718px]  h-full h[500px] rounded-[0px_130px_0px_0px]"
               />

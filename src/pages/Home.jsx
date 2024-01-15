@@ -102,7 +102,8 @@ function Home() {
                 <div className="flex flex-col gap-[10px]">
                   <img
                     src={bedroomImg1}
-                    alt=""
+                    alt="bedroom image"
+                    loading="lazy"
                     className="w-full h-full select-none"
                   />
                   <div className="flex items-center justify-between">
@@ -137,7 +138,8 @@ function Home() {
                 <div className="flex flex-col gap-[10px]">
                   <img
                     src={bedroomImg2}
-                    alt=""
+                    alt="bedroom image"
+                    loading="lazy"
                     className="w-full h-full select-none"
                   />
                   <div className="flex items-center justify-between">
@@ -172,7 +174,8 @@ function Home() {
                 <div className="flex flex-col gap-[10px]">
                   <img
                     src={bedroomImg3}
-                    alt=""
+                    alt="bedroom image"
+                    loading="lazy"
                     className="w-full h-full select-none"
                   />
                   <div className="flex items-center justify-between">
@@ -207,7 +210,8 @@ function Home() {
                 <div className="flex flex-col gap-[10px]">
                   <img
                     src={bedroomImg4}
-                    alt=""
+                    alt="bedroom image"
+                    loading="lazy"
                     className="w-full h-full select-none"
                   />
                   <div className="flex items-center justify-between">
@@ -261,11 +265,12 @@ function Home() {
               </div>
               <div className="grid items-center md:grid-cols-3 grid-cols-1 gap-[27px] mt-[119px]">
                 {Articles.map((article) => (
-                  <div className="blog_Card flex-col flex gap-[21px] cursor-pointer">
+                  <div key={article.id} className="blog_Card flex-col flex gap-[21px] cursor-pointer">
                     <div className="relative ">
                       <img
                         src={article.img}
-                        alt=""
+                        alt="article image"
+                        loading="lazy"
                         className="object-cover w-full h-full select-none"
                       />
                       <div className="absolute bottom-[20.27px] left-[20px] ">

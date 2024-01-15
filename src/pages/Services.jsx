@@ -1,6 +1,6 @@
 import React from "react";
 import Frame from "../components/Frame";
-import serviceFrame from "../assets/Service/Rectangle 20.png";
+import serviceFrame from "../assets/Service/ServiceFrame.jpg";
 import { services } from "../components/common/constent";
 import conceptImg from "../assets/Service/Rectangle 21.png";
 import ideaImg from "../assets/Service/Rectangle 22.png";
@@ -23,8 +23,7 @@ export default function Services() {
               return (
                 <>
                 <Link to={`/services/${service.name}`}>
-
-                  <div className="flex flex-col gap-[52px] items-center md:max-w-[358px] rounded-[30px] hover:bg-[#F9F9F9] md:py-[83px] py-[50px] px-[20px] duration-300 cursor-pointer group">
+                  <div key={services.id} className="flex flex-col gap-[52px] items-center md:max-w-[358px] rounded-[30px] hover:bg-[#F9F9F9] md:py-[83px] py-[50px] px-[20px] duration-300 cursor-pointer group">
                     <div className="flex flex-col items-center md:items-center">
                       <span className="text-black   md:text-[25px] text-[20px]  font-DMSerif font-normal leading-[125%] group-hover:text-burlywood-150">
                         {service.name}

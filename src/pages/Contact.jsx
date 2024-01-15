@@ -1,5 +1,5 @@
 import React from "react";
-import contactFrame from "../assets/contact/Rectangle 20 (1).png";
+import contactFrame from "../assets/contact/ContactFrame.jpg";
 import Frame from "../components/Frame";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";

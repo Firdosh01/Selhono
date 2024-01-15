@@ -28,26 +28,21 @@ export const navigation = [
   },
   {
     id: 2,
-    link: "Pages",
-    path: "/pages",
-  },
-  {
-    id: 3,
     link: "Services",
     path: "/services",
   },
   {
-    id: 4,
+    id: 3,
     link: "Project",
     path: "/our-projects/",
   },
   {
-    id: 5,
+    id: 4,
     link: "Blog",
     path: "/blog/",
   },
   {
-    id: 6,
+    id: 5,
     link: "Contact",
     path: "/contact-us/",
   },

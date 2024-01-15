@@ -19,9 +19,9 @@ export default function Team() {
             {teamMembers.map((teamMember) => {
               return (
                <Link to={`/our-team/${teamMember.id}`}>
-                <div className='flex flex-col gap-[17px]'>
+                <div key={teamMember.id} className='flex flex-col gap-[17px]'>
                   <div className='cursor-pointer '>
-                    <img src={teamMember.img} alt="" className='object-cover w-full h-full select-none' />
+                    <img src={teamMember.img} alt="team image" className='object-cover w-full h-full select-none' loading='lazy' />
                   </div>
                   <div className='flex flex-col gap-[16px] justify-center items-center'>
                     <div>

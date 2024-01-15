@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="container">
         <div className="md:flex  xl:gap-[101px] gap-[50px]   grid grid-cols-1">
           <div className="md:w-[393px]">
-            <div className="flex gap-[7px]">
+            <div className="flex gap-[7px] select-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="50"
@@ -35,7 +35,7 @@ export default function Footer() {
                 lookings.
               </p>
             </div>
-            <div className="flex md:gap-[54px] gap-[20px] mt-[31px] md:text-[18px] text-[15px] cursor-pointer">
+            <div className="flex md:gap-[54px] gap-[20px] mt-[31px] md:text-[18px] text-[15px] cursor-pointer w-fit">
               <FaFacebookF />
               <FaTwitter />
               <FaLinkedinIn />

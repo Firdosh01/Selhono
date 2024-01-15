@@ -33,11 +33,9 @@ body {
   line-height: 150%;
 }
 .container {
-  /* padding-inline: 355px; */
   max-width: calc(1920px - 355px);
   margin-inline: auto;
   padding-inline: 30px;
-  /* background-color: red; */
 }
 .nav_container {
   display: flex;

@@ -1,6 +1,6 @@
 import React from 'react'
 import Frame from '../components/Frame'
-import projectFrame from '../assets/Projects/Rectangle 20 (1).png'
+import projectFrame from '../assets/Projects/ProjectFrame.jpg'
 import { projects } from '../components/common/constent'
 import Footer from '../components/common/Footer'
 
@@ -18,7 +18,7 @@ function Project() {
         <div className='container'>
           <div className='mt-[37px] flex justify-center items-center lg:gap-[96px] gap-[10px] border border-[#CDA274] rounded-[18px]'>
             {projectsCategory.map((projectCategory) => (
-              <div>
+              <div key={projectCategory.id}>
                 <div>
                   <h5 className='text-black  font-Jost md:text-[18px] text-[15px] font-semibold leading-[125%] tracking-[0.36px] py-[26px]'>{projectCategory.name}</h5>
                 </div>
@@ -27,9 +27,9 @@ function Project() {
           </div>
           <div className='grid md:grid-cols-2 grid-cols-1 gap-[50px] gap-y-[38px] mt-[38px]'>
             {projects.map((project) => (
-              <div>
+              <div key={project.id}>
                 <div>
-                  <img src={project.img} alt="" className='object-cover w-full h-full select-none' />
+                  <img src={project.img} alt="project image" loading='lazy' className='object-cover w-full h-full select-none' />
                   <div className="flex items-center justify-between mt-[38px]">
                     <div>
                       <span className="heading tracking-[0.5px] lg:text-[25px] text-[20px]">
