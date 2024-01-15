@@ -67,8 +67,48 @@ body {
 }
 .blog_tag{
   border-radius: 8px 8px 8px 0px;
-background: rgba(0, 0, 0, 0.50);
-padding:  4px 5px 8px 11px;
+  background: rgba(0, 0, 0, 0.50);
+  padding:  4px 5px 8px 11px;
+}
+.skill-box {
+  width: 100%;
+}
+.skill-box .skill-bar{
+  width: 100%;
+  background-color: #F4F0EC;
+  height: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  user-select: none;
+}
+.skill-bar .skill-per{
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 65%;
+  background-color: #CDA274;
+  animation: progress .5s ease-in-out forwards;
+}
+.skill-per.team_mngment{
+  width: 95%;
+}
+.skill-per.client_stfction{
+  width: 75%;
+}
+.skill-per .tooltip{
+  position: absolute;
+  top: -30px;
+  right: -14px;
+} 
+
+@keyframes progress {
+  0%{
+    width: 0;
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1440px) {

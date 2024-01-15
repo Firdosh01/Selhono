@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { teamMembers } from "../components/common/constent";
 import { useParams } from "react-router-dom";
 import teamFrame from '../assets/Team/Rectangle 20 (1).png'
@@ -7,15 +7,38 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
+import Footer from "../components/common/Footer";
 
 export default function TeamDetails() {
+  const [isOpen, setIsOpen] = useState(true)
   const { id } = useParams();
   const userId = useMemo(() => parseInt(id, 10), [id]);
   const user = useMemo(
     () => teamMembers.find((u) => u.id === userId),
     [userId, teamMembers]
   );
-  console.log(user);
+  const accordions = [
+    {
+      id: 1,
+      title: "Website & Mobile App Design?",
+      desc: "Lorem ipsum dolor sit amet, adipiscing fromAliquam eu sem turpmaximus."
+    },
+    {
+      id: 2,
+      title: "How to Easy Successful Projects?",
+      desc: "Lorem ipsum dolor sit amet, adipiscing fromAliquam eu sem turpmaximus."
+    },
+    {
+      id: 3,
+      title: "International Trade Experience?",
+      desc: "Lorem ipsum dolor sit amet, adipiscing fromAliquam eu sem turpmaximus."
+    }
+  ]
+
+  const handleOpen = (index) => {
+    setIsOpen(index === isOpen ? -1 : index);
+  };
+  
   return (
     <section>
       <div>
@@ -92,8 +115,8 @@ export default function TeamDetails() {
             </div>
           </div>
           <div>
-            <h2 className="lg:text-[50px] md:text-[40px] text-[30px] heading   tracking-[0.25px] text-black">Short Biography​</h2>
-            <p className="paragraph lg:text-[22px] text-[15px] text-richBlack font-normal tracking-[0.22px] mt-[18px]">
+            <h2 className="lg:text-[50px] md:text-[40px] text-[30px] heading md:mt-0 mt-[20px]   tracking-[0.25px] text-black">Short Biography​</h2>
+            <p className="paragraph md:text-[22px] text-[18px] text-richBlack font-normal tracking-[0.22px] mt-[18px]">
                Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, 
                but the majority have suffered alteration in some form, njecthumour
                randomised words which don't look even slightly believable.
@@ -102,25 +125,111 @@ export default function TeamDetails() {
                but the majority have suffered alteration in some form chunks as necessary.
             </p>
           </div>
-          <div className="flex items-start justify-between mt-[45px]">
-            <div className="flex flex-col gap-[30px]">
+          <div className="flex items-start md:flex-row flex-col justify-between mt-[45px]">
+            <div className="flex flex-col gap-[30px] xl:max-w-[577px] lg:max-w-[500px] md:max-w-[400px] w-full ">
               <div>
-                <h5>Simplicity and Functionality</h5>
-                 <p>
+                <h5 className="heading md:text-[25px] text-[20px] text-black tracking-[0.25px]">Simplicity and Functionality</h5>
+                 <p className="paragraph md:text-[22px] text-[15px] tracking-[0.22px] text-richBlack mt-[12px]">
                     Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in belief.
-
+                    <br />
+                    <br />
                     There are many variations of passages of Lorem Ipsum from available, but the majority have suffered alteration in some form, njecthumour
                  </p>
               </div>
+             <div className="flex flex-col gap-[20px]">
+             <div className="skill-box">
+                <span className="text-richBlack md:text-[22px] text-[18px] font-medium font-Jost leading-[125%] tracking-[0.22px]">Project Design</span>
+                <div className="skill-bar">
+                  <span className="skill-per">
+                    <span className="tooltip text-richBlack paragraph text-[15px] tracking-[0.15px] font-medium">65%</span>
+                  </span>
+                </div>
+              </div>
+              <div className="skill-box">
+                <span className="text-richBlack md:text-[22px] text-[18px] font-medium font-Jost leading-[125%] tracking-[0.22px]">Team Management</span>
+                <div className="skill-bar">
+                  <span className="skill-per team_mngment">
+                    <span className="tooltip text-richBlack paragraph text-[15px] tracking-[0.15px] font-medium">95%</span>
+                  </span>
+                </div>
+              </div>
+              <div className="skill-box">
+                <span className="text-richBlack md:text-[22px] text-[18px] font-medium font-Jost leading-[125%] tracking-[0.22px]">Client Satisfaction</span>
+                <div className="skill-bar">
+                  <span className="skill-per client_stfction">
+                    <span className="tooltip text-richBlack paragraph text-[15px] tracking-[0.15px] font-medium">75%</span>
+                  </span>
+                </div>
+              </div>
+             </div>
             </div>
-            <div>
-              <h5>Qustion And Answer</h5>
-              <p>
+            <div className="xl:max-w-[528px] lg:max-w-[400px] w-full md:max-w-[350px]  md:mt-0 mt-[80px]">
+              <h5 className="heading md:text-[25px] text-[20px] text-black tracking-[0.25px]">Qustion And Answer</h5>
+              <p className="paragraph md:text-[22px] text-[15px] tracking-[0.22px] text-richBlack mt-[12px]">
                  Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.
               </p>
+              <div className="mt-[19px]">
+                {accordions.map((accordion, index) => {
+                  return (
+                    <div key={accordion.id} className={` rounded-[18px] md:py-[24px] py-[12px] md:px-[22px] px-[11px] my-4 ${isOpen === index ? "bg-[#F4F0EC]" : "border border-black"}`}>
+                      <div className="flex items-center justify-between">
+                        <span className="font-semibold text-black font-Jost tracking-[0.36px] md:text-[18px] text-[15px] select-none">{accordion.title}</span>
+                        <div className="md:w-[44px] md:h-[44px] w-[30px] h-[30px] bg-[#F4F0EC] cursor-pointer" onClick={() => handleOpen(index)}>
+                          {isOpen === index ?
+                          <div>
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
+                              <circle cx="22" cy="22" r="22" fill="white"/>
+                              <line x1="13" y1="23" x2="31" y2="23" stroke="#292F36" stroke-width="2"/>
+                           </svg>
+                           </div>
+                           : 
+                          <div className="bg-[#F4F0EC]"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
+                                <circle cx="22" cy="22" r="22" />
+                                <line x1="13" y1="23" x2="31" y2="23" stroke="#292F36" stroke-width="2"/>
+                            </svg>
+                          </div>
+                          }                      
+                        </div>
+                      </div>
+                      {isOpen === index && 
+                         <div className="mt-[15px]">
+                           <p className="paragraph md:text-[22px] text-[18px] font-normal leading-[150%] tracking-[0.22px]">{accordion.desc}</p> 
+                        </div>
+                      }
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          </div>
+          <div className="mt-[100px]">
+            <div className='grid lg:grid-cols-4 grid-cols-2 gap-[22px] gap-y-[50px] mt-[89px]'>
+              {teamMembers.slice(4,8).map((teamMember) => {
+                return (
+              <div className='flex flex-col gap-[17px]'>
+                  <div>
+                    <img src={teamMember.img} alt="" className='object-cover w-full h-full select-none' />
+                  </div>
+                  <div className='flex flex-col gap-[16px] justify-center items-center'>
+                    <div>
+                      <h2 className='lg:text-[25px] text-[20px] font-DMSerif font-normal leading-[150%] tracking-[0.25px] text-black'>{teamMember.name}</h2>
+                      <p className='font-Jost lg:text-[18px] text-[15px] text-center font-normal leading-[150%] tracking-[0.18px] text-richBlack'>{teamMember.role}</p>
+                    </div>
+                    <div className='flex gap-[37px] md:text-[18px] text-[15px] cursor-pointer'>
+                      <FaFacebookF />
+                      <FaTwitter />
+                    </div>
+                  </div>
+                </div>
+                )
+              })}
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-[200px]">
+        <Footer />
       </div>
     </section>
   );
