@@ -52,7 +52,7 @@ function Project() {
           </div>
         </div>
       </div>
-      <div className='mt-[80px]'>
+      <div className='mt-[100px]'>
       <Footer />
       </div>
     </section>
