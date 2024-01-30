@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/common/Navbar';
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Router, Routes, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Error from './pages/Error';
 import About from './pages/About';
@@ -13,8 +13,19 @@ import Contact from './pages/Contact';
 import Team from './pages/Team';
 import ServiceDetails from './pages/ServiceDetails';
 import TeamDetails from './pages/TeamDetails';
+import { useEffect } from 'react';
 
 function App() {
+
+    const {pathname} = useLocation();
+
+    useEffect(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    },[pathname])
+
   return (
     <div>
       <Navbar />

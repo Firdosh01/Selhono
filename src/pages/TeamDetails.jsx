@@ -174,21 +174,20 @@ export default function TeamDetails() {
                     <div key={accordion.id} className={` rounded-[18px] md:py-[24px] py-[12px] md:px-[22px] px-[11px] my-4 ${isOpen === index ? "bg-[#F4F0EC]" : "border border-black"}`}>
                       <div className="flex items-center justify-between">
                         <span className="font-semibold text-black font-Jost tracking-[0.36px] md:text-[18px] text-[15px] select-none">{accordion.title}</span>
-                        <div className="md:w-[44px] md:h-[44px] w-[30px] h-[30px] bg-[#F4F0EC] cursor-pointer" onClick={() => handleOpen(index)}>
+                        <div className="md:w-[44px] md:h-[44px] w-[30px] h-[30px]  cursor-pointer" onClick={() => handleOpen(index)}>
                           {isOpen === index ?
                           <div>
-                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
-                              <circle cx="22" cy="22" r="22" fill="white"/>
-                              <line x1="13" y1="23" x2="31" y2="23" stroke="#292F36" stroke-width="2"/>
-                           </svg>
-                           </div>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                              </svg>
+                            </div>
                            : 
-                          <div className="bg-[#F4F0EC]"> 
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
-                                <circle cx="22" cy="22" r="22" />
-                                <line x1="13" y1="23" x2="31" y2="23" stroke="#292F36" stroke-width="2"/>
-                            </svg>
-                          </div>
+                            <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                 <line x1="12" y1="5" x2="12" y2="19"></line>
+                                 <line x1="5" y1="12" x2="19" y2="12"></line>
+                               </svg>
+                            </div>
                           }                      
                         </div>
                       </div>

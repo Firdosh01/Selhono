@@ -22,7 +22,7 @@ export default function Error() {
                   children={"Back To Home"}
                   active={false}
                   style={
-                    "xl:py-[26px] xl:px-[54px] md:py-[20px] md:px-[48px] py-[12px] px-[20px] md:gap-[11px] gap-[5px]"
+                    "xl:py-[26px] xl:px-[54px] md:py-[18px] md:px-[40px] py-[10px] px-[15px] md:gap-[11px] gap-[5px]"
                   }
                 />
               </div>
